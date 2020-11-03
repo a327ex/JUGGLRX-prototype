@@ -213,6 +213,7 @@ update = function(dt)
     end
   end
   if input.r.pressed and player.dead then
+    cascade_instance:stop()
     bg:destroy()
     main:destroy()
     effects:destroy()

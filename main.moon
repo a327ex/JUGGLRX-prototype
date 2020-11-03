@@ -103,6 +103,7 @@ update = (dt) ->
       music.volume = 0.5
 
   if input.r.pressed and player.dead
+    cascade_instance\stop!
     bg\destroy!
     main\destroy!
     effects\destroy!
